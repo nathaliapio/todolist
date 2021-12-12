@@ -24,17 +24,6 @@
 body {
   background-color: #e9e3e3;
 }
-.checkbox {
-  position: absolute;
-  opacity: 0;
-  cursor: pointer;
-}
-.check {
-  left: 0;
-  top: 0;
-  width: 25px;
-  background: #ccc;
-}
 .delete {
   font-family: arial, sans-serif;
   font-size: 20px;
