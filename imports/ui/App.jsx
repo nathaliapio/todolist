@@ -10,7 +10,7 @@ export const App = () => {
 
   return (
     <div id="app">
-      <h1>To-Do List:</h1>
+      <h1>To-Do List</h1>
 
       <TaskForm task={taskSelected} />
 

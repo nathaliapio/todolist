@@ -1,9 +1,6 @@
 import React from 'react';
 import { TasksCollection } from '/imports/api/TasksCollection';
 
-//readOnly, pois onChange atualiza o estado
-//precisa forçar o checked para boolean
-
 export const TaskList = ({ list, onTaskSelect }) => {
     const onCheckboxClick = (task) => {
         TasksCollection.update(task._id, {
@@ -21,15 +18,10 @@ export const TaskList = ({ list, onTaskSelect }) => {
         <ul>
             {list.map((task, index) => (
                 <li key={index}>
-                    <input
-                        type="checkbox"
-                        checked={!!task.isChecked}
-                        onClick={() => onCheckboxClick(task)}
-                        readOnly
-                    />
-                    <span>{task.text}</span>
-                    <button onClick={() => onDeleteClick(task)}>&times;</button>
-                    <button onClick={() => onTaskSelect(task)}>edit</button>
+                    <input type="checkbox" checked={!!task.isChecked} onClick={() => onCheckboxClick(task)} readOnly />
+                    <span class="alltasks">{task.text}</span>
+                    <button class="delete" onClick={() => onDeleteClick(task)}>&times;</button>
+                    <button class="edit" onClick={() => onTaskSelect(task)}>edit</button>
                 </li>
             ))}
         </ul>

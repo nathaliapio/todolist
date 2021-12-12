@@ -1,7 +1,91 @@
-body {
-  padding: 10px;
-  font-family: sans-serif;
+.add {
+  font-family: arial, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  background-color: white;
+  border: 1px solid #706e6eb6;
+  border-radius: 4px;  
+  margin-left: 40px;
 }
-.task-form{
-  margin-top: 1rem;
+.add:hover {
+  background-color: #d3d3d3b6;
+}
+.alltasks {
+  font-family: arial, sans-serif;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 25px;
+  align-items: center;
+}
+#app {
+  overflow: auto;
+  text-overflow: ellipsis;  
+}
+body {
+  background-color: #e9e3e3;
+}
+.checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.check {
+  left: 0;
+  top: 0;
+  width: 25px;
+  background: #ccc;
+}
+.delete {
+  font-family: arial, sans-serif;
+  font-size: 20px;
+  background-color: white;
+  border: none;
+  font-size: 20px;
+}
+.delete:hover{
+  color: red;
+}
+.edit {
+  font-family: arial, sans-serif;
+  font-size: 20px;
+  background-color: white;
+  border: 1px solid #706e6eb6;
+  border-radius: 4px;
+}
+.edit:hover {
+  background: #dfb9ff;
+}
+h1 {
+  background-color: #dfb9ff;
+  border-radius: 4px;
+  margin: 0 auto;
+}
+li {
+  display: flex;
+  align-items: center; 
+}
+#react-target {
+  text-align: center; 
+  background-color: white;  
+  font-family: arial, sans-serif;
+  font-size: 20px;
+  margin-left: 35%;
+  margin-right: 35%;
+  padding-bottom: 20%;
+  border: 3px solid #dfb9ff;
+  border-radius: 8px;
+}
+.task-form {
+  vertical-align: center;
+  padding: 15px;
+}
+ul {
+  padding: 0px;  
+}
+.upperinput {
+  font-family: arial, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  border:0.5px solid #d3d3d3b6;
+  border-radius: 4px;
 }
