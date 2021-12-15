@@ -14,16 +14,25 @@ export const TaskList = ({ list, onTaskSelect }) => {
         TasksCollection.remove(task._id);
     };
 
+    const onDeleteChecked = () => {
+        list.forEach(listItem => {
+            if (listItem.isChecked)
+                TasksCollection.remove(listItem._id);
+        });
+
+    };
+
     return (
         <ul>
             {list.map((task, index) => (
                 <li key={index}>
                     <input type="checkbox" checked={!!task.isChecked} onClick={() => onCheckboxClick(task)} readOnly />
                     <span class="alltasks">{task.text}</span>
-                    <button class="delete" onClick={() => onDeleteClick(task)}>&times;</button>
+                    <button class="delete" onClick={() => onDeleteClick(task)}>delete</button>
                     <button class="edit" onClick={() => onTaskSelect(task)}>edit</button>
                 </li>
             ))}
+            <button class="deletechecked" onClick={() => onDeleteChecked()}>delete completed tasks</button>
         </ul>
     );
 };
