@@ -1,21 +1,20 @@
 .add {
   font-family: arial, sans-serif;
-  font-size: 20px;
-  text-align: center;
-  background-color: white;
-  border: 1px solid #706e6eb6;
-  border-radius: 4px;  
-  margin-left: 40px;
+  font-size: 18px;
+  color: white;
+  background-color: #33be72;
+  border: 0.5px solid #33be72;
+  border-radius: 4px;
+  float: right;
 }
 .add:hover {
-  background-color: #d3d3d3b6;
+  background-color:#dfb9ff;
+  border-color: #dfb9ff;
 }
 .alltasks {
   font-family: arial, sans-serif;
-  padding-left: 10px;
-  padding-right: 10px;
   font-size: 25px;
-  align-items: center;
+  padding-left: 6px;
 }
 #app {
   overflow: auto;
@@ -23,58 +22,83 @@
 }
 body {
   background-color: #e9e3e3;
+  text-align: center; 
+  font-family: arial, sans-serif;
+  font-size: 20px;
+  margin-left: 40%;
+  margin-right: 40%;
+  padding-bottom: 20%;
+  border: 4px solid #c79ee9;
+  border-radius: 8px;
 }
 .delete {
   font-family: arial, sans-serif;
-  font-size: 20px;
-  background-color: white;
-  border: none;
-  font-size: 20px;
+  font-size: 15px;
+  color: white;  
+  background-color: #f15858;
+  border: 1px solid #f15858;
+  border-radius: 4px;
+  float: right;
+  margin-top: 4px;
+  margin-right: 4px;  
 }
 .delete:hover{
-  color: red;
+  background-color: #dfb9ff;
+  border: 1px solid #dfb9ff;
+}
+.deletechecked{
+  font-family: arial, sans-serif;
+  font-size: 15px;
+  color: white;
+  background-color: #f15858;
+  border: 1px solid #f15858;
+  border-radius: 4px;
+  margin-top: 30px;
+}
+.deletechecked:hover{
+  background-color: #dfb9ff;
+  border-color: #dfb9ff;
 }
 .edit {
   font-family: arial, sans-serif;
-  font-size: 20px;
-  background-color: white;
-  border: 1px solid #706e6eb6;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  background-color: #6e6c6cb6;
+  border: 1px solid #6e6c6cb6;
   border-radius: 4px;
+  float: right;
+  margin-top: 4px;
+  margin-right: 5px;
 }
 .edit:hover {
-  background: #dfb9ff;
+  background-color: #dfb9ff;
+  border: 1px solid #dfb9ff;
 }
 h1 {
-  background-color: #dfb9ff;
+  background-color: #c79ee9;
   border-radius: 4px;
   margin: 0 auto;
-}
-li {
-  display: flex;
-  align-items: center; 
-}
-#react-target {
-  text-align: center; 
-  background-color: white;  
-  font-family: arial, sans-serif;
-  font-size: 20px;
-  margin-left: 35%;
-  margin-right: 35%;
-  padding-bottom: 20%;
-  border: 3px solid #dfb9ff;
-  border-radius: 8px;
+  font-size: 35px;
 }
 .task-form {
-  vertical-align: center;
   padding: 15px;
 }
 ul {
-  padding: 0px;  
+  padding: 0px;
+  list-style: none;
+}
+li {
+  text-align: left;
 }
 .upperinput {
   font-family: arial, sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   text-align: center;
   border:0.5px solid #d3d3d3b6;
   border-radius: 4px;
+}
+input[type='checkbox'] {
+  float: left;
+  margin-top: 8px;
 }
