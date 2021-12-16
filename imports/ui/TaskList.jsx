@@ -27,7 +27,7 @@ export const TaskList = ({ list, onTaskSelect }) => {
             {list.map((task, index) => (
                 <li key={index}>
                     <input type="checkbox" checked={!!task.isChecked} onClick={() => onCheckboxClick(task)} readOnly />
-                    <span class="alltasks">{task.text}</span>
+                    <span style={!task.isChecked ? {} : { textDecorationLine: 'line-through' }} class="alltasks">{task.text}</span>
                     <button class="delete" onClick={() => onDeleteClick(task)}>delete</button>
                     <button class="edit" onClick={() => onTaskSelect(task)}>edit</button>
                 </li>

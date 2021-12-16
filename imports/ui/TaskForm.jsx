@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { TasksCollection } from '/imports/api/TasksCollection';
+import { useTracker } from 'meteor/react-meteor-data';
 
 export const TaskForm = ({ task }) => {
     const [text, setText] = useState("");
     const [id, setId] = useState(0);
+    const user = useTracker(() => Meteor.user());
 
     useEffect(() => {
         if (task) {
@@ -13,6 +15,7 @@ export const TaskForm = ({ task }) => {
     }, [task]);
 
     const handleSubmit = e => {
+        console.log(user)
         e.preventDefault();
 
         if (!text) return;
@@ -20,7 +23,8 @@ export const TaskForm = ({ task }) => {
         if (id === 0) {
             TasksCollection.insert({
                 text: text.trim(),
-                createdAt: new Date()
+                createdAt: new Date(),
+                userId: user._id
             });
         } else {
             TasksCollection.update({
