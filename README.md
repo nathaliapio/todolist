@@ -6,6 +6,8 @@ To login into the project:
 
 Username: meteorita
 Password: password
+
+To use the meteor:
   
 Quick Start (on Linux/macOS/Windows) use this line:
 
