@@ -3,8 +3,9 @@ To-do list using MeteorJS
 Meteor is an ultra-simple environment for building modern web applications.
 
 To login into the project:
-  Username: meteorita
-  Password: password
+
+Username: meteorita
+Password: password
   
 Quick Start (on Linux/macOS/Windows) use this line:
 
